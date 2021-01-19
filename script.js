@@ -2,11 +2,26 @@
 var m = moment();
 
 //create a variable for the current date
-var currentDate = m.format("DD MM YYYY");
+var currentDate = m.format("DD-MM-YYYY");
+
+//create a variable for the current time
+
+var currentTime = m.format("HH:MM");
+
+//create a variable for the current day (today)
+
+var currentToday = moment().weekday();
 
 // Set date 
 $("#currentDay").text("Today's Date: " + currentDate);
 
+//Set time
+$("#currentDayTime").text("The current time is " + currentTime);
+
+//Set today
+//$("#currentToday").text("Today is " + currentToday)
+
+// changes set today from the number of the day to the word of the day
 
 
 $(document).ready(function() {
